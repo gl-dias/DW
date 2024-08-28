@@ -3,13 +3,17 @@ h1{
     font-size: 60px
 }
 h2 {
-    color:rgb(255, 178, 11);
+    color: rgb(8, 55, 105);
     margin-left: 20px;
 }
 h3{
-    color:rgb(1, 55, 105);
+    color:rgb(255, 230, 0);
     margin-left: 40px;
     font-size: 30px;
+}
+h4{
+    color: black;
+    margin-left: 40px;
 }
 img{
     width:"100%"

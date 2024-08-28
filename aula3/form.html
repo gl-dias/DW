@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Entre em Contato</h1>
+    <form action="get">
+        <fieldset>
+            <legend>Informações</legend>
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname" required size="5" maxlength="5"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" placeholder="nome@gmail.com"><br>
+            <label for="date">Data de nascimento:</label><br>
+            <input type="date" id="datemax" name="datemax" min="2006-12-31"><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <label for="cars">Escolha a marca de carro</label>
+            <select name="cars" id="cars">
+                <optgroup label="Popular">
+                    <option value="Chevrolet" selected>Chevrolet</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Fiat">Fiat</option>
+                </optgroup>
+                    <optgroup label="Luxo">
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                </optgroup>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </fieldset><br>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Usuário:</label><br>
+            <input type="text" id="user" name="user"><br>
+            <label for="password">Senha:</label><br>
+            <input type="text"><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>    
+</body>
+</html>

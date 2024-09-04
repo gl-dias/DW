@@ -1,0 +1,28 @@
+header{
+    border: 1px solid green;
+    padding: 40px;
+    margin: 20px;
+}
+
+nav{
+    border: 1px solid green;
+    padding: 40px;
+    margin: 20px;
+}
+
+article{
+    border: 1px solid green;
+    padding: 40px;
+    margin: 20px;
+}
+
+section{
+    border: 1px solid green;
+    padding: 40px;
+    margin: 20px;
+}
+footer{
+    border: 1px solid green;
+    padding: 40px;
+    margin: 20px;
+}

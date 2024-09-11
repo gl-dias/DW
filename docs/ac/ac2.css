@@ -44,11 +44,7 @@ button {
     border-radius: 4px;
     cursor: pointer; 
 }
-button[type="submit"] {
-    color: white;
-}
-button[type="reset"] {
-    color: white;
+
 }
 .multimedia {
     margin-top: 20px;

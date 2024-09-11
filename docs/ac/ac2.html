@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ac2.css">
+</head>
+<body>
+    <h1>Feedback para a página de perfil de Guilherme</h1>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="profile-source">How did you find my profile?</label>
+            <select id="profile-source" name="profile-source">
+                <option value="google">Google</option>
+                <option value="social-media">Mídia social</option>
+                <option value="friend">Amigo</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Seção de feedback</legend>
+            <label for="comments">Comentários ou feedback:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+            
+            <div class="radio-group">
+                <label>Você gostou do meu perfil?</label>
+                <label><input type="radio" name="like-profile" value="yes"> Sim</label>
+                <label><input type="radio" name="like-profile" value="no"> Não</label>
+                <label><input type="radio" name="like-profile" value="maybe"> Talvez</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <label>O que você gostou no perfil?</label>
+                <label><input type="checkbox" name="perfil" value="design"> Design</label>
+                <label><input type="checkbox" name="perfil" value="conteudo"> Conteúdo</label>
+                <label><input type="checkbox" name="perfil" value="usabilidade"> Facilidade de uso</label>
+                <label><input type="checkbox" name="perfil" value="outros"> Outros</label>
+            </div>
+        </fieldset>
+        
+        <div class="buttons">
+            <button type="enviar">Enviar</button>
+            <button type="redefinir">Redefinir</button>
+        </div>
+    </form>
+    
+    <div class="multimidia">
+        <h2>Multimídia</h2>
+        <div>
+            <label>Videoclipe:</label>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <label>Áudio:</label>
+            <iframe width="100%" height="166" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bruno-mars-lady-gaga/die-with-a-smile-sped-up-version&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Obrigado pelos seus comentários!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Define o comportamento da caixa de elementos. Box-sizing: border-box faz com que padding e bordas sejam incluídos na largura e altura total dos elementos. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #2b2b2b; /* Cor do texto */
+}
+
+/* Estiliza o cabeçalho da página */
+header {
+    background-color: #ffcc00; /* Define a cor de fundo amarela */
+    padding: 10px 0; /* Espaçamento superior e inferior de 10px */
+}
+
+/* Configura a barra de navegação como um flexbox */
+nav {
+    display: flex; /* Exibe os itens em linha, usando flexbox */
+    justify-content: space-between; /* Espaça os itens (logo e links) uniformemente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza a barra de navegação */
+}
+
+/* Define o tamanho da logomarca no cabeçalho */
+.logo {
+    height: 50px; /* Define a altura da imagem da logomarca */
+}
+
+/* Estiliza os links de navegação */
+.nav-links {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Exibe os links em uma linha */
+}
+
+/* Estiliza cada item de link de navegação */
+.nav-links li {
+    margin: 0 15px; /* Adiciona espaçamento lateral entre os links */
+}
+
+/* Estiliza os links */
+.nav-links a {
+    color: #2b2b2b; /* Define a cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Galeria flexível de imagens */
+.flex-gallery {
+    display: flex; /* Exibe as imagens lado a lado usando flexbox */
+    justify-content: space-between; /* Espaça as imagens uniformemente */
+    margin: 20px; /* Adiciona margem ao redor da galeria */
+}
+
+/* Define o tamanho das imagens na galeria */
+.flex-gallery img {
+    width: 300px; /* Define a largura das imagens */
+}
+
+/* Imagem de meios de pagamentos*/
+.pagamento {
+    height: 150px;
+}
+
+/* Layout em grid para exibir itens em colunas */
+.grid-layout {
+    display: grid; /* Utiliza o grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento entre os itens do grid */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    display: flex; /* Usa flexbox para organizar as seções do rodapé */
+    justify-content: space-around; /* Distribui as seções uniformemente */
+    background-color: #003366; /* Cor de fundo do rodapé (azul escuro) */
+    color: rgb(255, 255, 255); /* Cor do texto no rodapé (branco) */
+    padding: 20px 0; /* Espaçamento superior e inferior de 20px */
+}
+
+/* Estiliza as seções individuais do rodapé */
+.footer-section {
+    width: 30%; /* Define a largura de cada seção como 30% do rodapé */
+}
+
+/* Media queries para tornar o site responsivo em telas menores */
+
+/* Estilo para telas com largura máxima de 768px (tablets) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Coloca os itens de navegação em uma coluna (empilhados) */
+        align-items: center; /* Centraliza os itens de navegação */
+    }
+
+    .flex-gallery {
+        flex-direction: column; /* Empilha as imagens verticalmente */
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr); /* Altera o grid para 2 colunas */
+    }
+}
+
+/* Estilo para telas com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Altera o grid para 1 coluna, ocupando toda a largura */
+    }
+}
+
+

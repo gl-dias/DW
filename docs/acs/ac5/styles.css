@@ -99,3 +99,7 @@ button[type="submit"]:hover:not(:disabled) {
     height: auto;
     border-radius: 4px;
 }
+
+.invalid {
+    border: 2px solid red;
+}

@@ -39,7 +39,7 @@ document.getElementById('pokemon-form').addEventListener('submit', async (event)
         
         // Adiciona o card ao contêiner
         pokemonContainer.appendChild(card);
-        
+
     } else {
         pokemonContainer.innerHTML = '<p>Pokémon não encontrado</p>';
     }

@@ -10,13 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Pokédex</h1>
+            </div>
+            <nav class="navigation">
+                <ul id="region-buttons">
+                    <li><button onclick="loadPokemonByRegion(2, 'Kanto')">Kanto</button></li>
+                    <li><button onclick="loadPokemonByRegion(3, 'Johto')">Johto</button></li>
+                    <li><button onclick="loadPokemonByRegion(4, 'Hoenn')">Hoenn</button></li>
+                    <li><button onclick="loadPokemonByRegion(5, 'Sinnoh')">Sinnoh</button></li>
+                    <li><button onclick="loadPokemonByRegion(8, 'Unova')">Unova</button></li>
+                    <li><button onclick="loadPokemonByRegion(12, 'Kalos')">Kalos</button></li>
+                    <li><button onclick="loadPokemonByRegion(16, 'Alola')">Alola</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <h1>Pokémon Search</h1>
     <form id="pokemon-form">
         <input type="text" id="pokemon-name" placeholder="Enter Pokémon name" required>
         <button type="submit">Search</button>
     </form>
-    <div id="pokemon-data"></div>
-    <div id="pokemon-container"></div>
+    <main>
+        <section id="pokemon-data"></section>
+        <div id="pokemon-container"></div>    
+    </main>
     <footer>
         <div class="rodape" id="sobre">
             <h3>Sobre</h3>

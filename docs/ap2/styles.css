@@ -13,6 +13,36 @@ h1 {
     color: #fb6161;
 }
 
+/* Menu - Centraliza o conteúdo */
+.menu {
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+    margin-top: 20px; /* Espaço acima do menu */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fb6161;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #ff0000;
+}
+
 /* Formulário */
 form {
     margin: 20px auto;
@@ -92,6 +122,8 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Permite que os botões se empilhem */
+    justify-content: center; /* Centraliza os botões */
 }
 
 #region-buttons button {
@@ -103,12 +135,41 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px; /* Adiciona um espaçamento entre os botões */
 }
 
 #region-buttons button:hover {
     background-color: #e04d4d;
 }
 
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    /* Empilhar os botões das regiões */
+    #region-buttons {
+        flex-direction: column; /* Empilhar os botões */
+        align-items: center; /* Alinhar ao centro */
+    }
+
+    /* Menu - Empilhar itens no mobile */
+    .menu ul {
+        flex-direction: column; /* Empilhar os itens */
+        gap: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 16px; /* Tamanho da fonte menor */
+    }
+
+    /* Ajuste do header */
+    header {
+        flex-direction: column; /* Empilhar logo e menu */
+        padding: 10px;
+    }
+
+    .header-content .logo h1 {
+        font-size: 22px; /* Ajuste o tamanho do título */
+    }
+}
 /* Pokémon Data */
 #pokemon-data {
     margin: 20px auto;
